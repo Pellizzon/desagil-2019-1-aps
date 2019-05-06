@@ -42,7 +42,7 @@ public class GateView extends FixedPanel implements ItemListener {
             gate.connect(i, switches[i]);
         }
 
-        for (int i=0; i< outputSize; i++) {
+        for (int i = 0; i < outputSize; i++) {
             outputBoxes[i] = new JCheckBox();
         }
 
@@ -87,7 +87,7 @@ public class GateView extends FixedPanel implements ItemListener {
             }
         }
 
-        for (int i=0; i<gate.getOutputSize(); i++) {
+        for (int i = 0; i < gate.getOutputSize(); i++) {
             for (JCheckBox outbox : outputBoxes) {
                 boolean result = gate.read(i);
                 outbox.setSelected(result);

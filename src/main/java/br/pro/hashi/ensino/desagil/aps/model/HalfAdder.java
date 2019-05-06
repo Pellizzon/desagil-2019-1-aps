@@ -23,7 +23,7 @@ public class HalfAdder extends Gate {
         nandRight.connect(0, nandTop);
         nandRight.connect(1, nandBottom);
 
-        nandBottomB.connect(0,nandLeft);
+        nandBottomB.connect(0, nandLeft);
         nandBottomB.connect(1, nandLeft);
     }
 
